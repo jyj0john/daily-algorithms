@@ -1,0 +1,5 @@
+select FirstName, LastName, City, State
+from Person left join Address
+on Person.PersonID = Address.PersonID
+group by Person.PersonID
+#LeetCode 175 combine 2 tables
